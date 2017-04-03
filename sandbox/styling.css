@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    align-content: center;
+    font-family:verdana;
+}
+/*this is essential*/
+
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+#search-bar {
+    margin-left:20px;
+    width: 250px;
+    border-radius: 4px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-size: 1em;
+    /* write both for clarity for those who don't know what em is */
+    font-family: 'Arsenal';
+    background-color:#809fff;
+    color:white;
+    text-shadow: 1px 1px grey;
+    /*need quotes because there is a space in the name. it would think that thin is a different font face. sans-serif is the back-up. if the browser doesn't have access to arial, use arial thin, if it doesn't have either, use default sans-serif.*/
+
+}
+
+
+#hi-lo{
+    list-style: none;
+}
+
+#hi-lo>li:first-child {
+    display:inline-block;
+    width:90px;
+    margin:-20px;
+    font-size:30px;
+}
+#hi-lo>li:nth-child(2){
+    display:inline;
+    width:75%;
+    margin:-5px;
+}
+#hi-lo>li:nth-child(3){
+    display:inline-block;
+    margin:-10px;
+    padding-left:20px;
+    font-size:30px;
+}
+
+#hi-lo #image {
+    width: 50%;
+}
+
+#pwd2 {
+    list-style: none;
+}
+
+#pwd2>li {
+    display:inline-block;
+    margin:-25px;
+    padding-right:42px;
+}
+
+#weather-stats>li {
+    display:inline-block;
+    margin-left:20px;
+    padding-right:3px;
+    font-size:22px;
+
+}
+
+#page-nav ul{
+    list-style:none;
+    background-color:#4d4d4d;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+
+#page-nav ul li {
+    display: inline-block;
+    text-align: center;
+
+}
+
+#page-nav ul li a {
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+
+}
+
+nav li:first-child {
+    padding-right:50px;
+    width: 12%;
+    margin-left: -20px
+}
+
+#near-cities {
+    list-style: none;
+}
+
+#near-cities li {
+    display: inline-block;
+    margin:7px;
+    text-transform:uppercase;
+}
+
+#preston {
+    width:45%;
+}
+
+
+#mobile-sketch {
+    width: 150px;
+    margin:20px;
+}
+
+h1 {
+    padding-left:55px;
+    text-transform: uppercase;
+    border-top-style:solid;
+    padding-top:5px;
+}
+h3 {
+    padding-left:100px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    background-color:#4d4d4d;
+}

@@ -1,0 +1,7 @@
+$("#page-nav).on("click), "a", function (evt) {
+    evt.preventDefault();
+    var navClick = $(this).text();
+    console.log(navClick);
+    
+    var pName
+}

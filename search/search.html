@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang='en-US'>
+    <head>
+        <meta charset='utf-8'>
+        <title>Search Tool Activity</title>
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="" media="screen">
+    </head>
+    <!-- *********************************************
+* Who Did You Collaborate With On This Activity?
+* 1. Morgan Orton
+  2. Joseph Canto
+* 3. Daniel Sedrick
+* 4. Dustin Rowbury
+* 5. Matthew Sortomme
+* ******************************************** -->
+
+    <body>
+        <header>
+            <h1>Page header goes here</h1>
+        </header>
+        <nav>
+            Page navigation goes here
+        </nav>
+        <main>
+            <br>
+            <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+                <input type="search" name="query" id="query">
+                <input type="submit" name="submit" value="Search" id="send">
+            </form>
+            <section id="searchResults">
+                <h2>Search Results</h2>
+            </section>
+        </main>
+        <footer>
+            &copy; 2017 || Morgan Orton
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="search.js"></script>
+    </body>
+</html>

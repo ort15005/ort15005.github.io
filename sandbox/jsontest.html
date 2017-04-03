@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <title>JSON Test</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+ <script>
+  jQuery(document).ready(function ($) {
+   $.ajax({
+    url: "weather2.json",
+    dataType: "json",
+    success: function (data) {
+     var location = data['Springfield']['City'];
+     var temp_f = data['Springfield']['High'];
+     console.log("Current temperature in " + location + " is: " + temp_f);
+
+     var locName = $('#locName');
+     var highTemp = $('#highTemp');
+     var tempMessage = $('#tempMessage');
+
+     locName.html(location);
+     highTemp.html(temp_f);
+     tempMessage.html("Current temperature in " + location + " is: " + temp_f);
+    }
+   });
+  });
+ </script>
+</head>
+
+<body>
+
+<h1 id="locName"></h1>
+ <h2 id="highTemp"></h2>
+ <p id="tempMessage"></p>
+
+
+</body>
+
+</html>

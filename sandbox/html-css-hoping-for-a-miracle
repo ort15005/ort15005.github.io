@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Morgan Orton Weather Website</title>
+<link rel="stylesheet" type="text/css" href="styling.css" media="screen" />
+<meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+<div id="wrapper">
+<header id="page-header">
+<!--put logo here-->
+<nav id="page-nav">
+<ul>
+<li><a href="#">Logo</a></li>
+<li><a href="#">Home    |</a></li>
+<li><a href="#">Franklin    |</a></li>
+<li><a href="#">Springfield |</a></li>
+<li><a href="#">Greenville</a></li>
+
+</ul>
+</nav>
+
+<form id="page-search" >
+<input type="search" placeholder="Search by city, zipcode" name="q" id="search-bar">
+<input type="submit" name="submit">
+</form>
+</header>
+
+<main>
+
+<h1 class="left-aligned">Franklin, ID</h1>
+<!--
+<tr id="temp">
+<th>High<br>90&deg;<sup>F</sup></th>
+<th><img id="conditions" src="https://thecliparts.com/wp-content/uploads/2016/07/sunshine-clip-art.png" alt="sunny"></th>
+<th>Low<br>66&deg;<sup>F</sup></th>
+</tr>
+
+<h2>Partly Cloudy</h2>
+
+<tr id="pwd">
+<th>Precipitation<br>0%</th>
+<th>Wind speed<br>1-5 mph</th>
+<th>Wind Direction<br>SW</th>
+</tr>
+<h2>Cities Near You:</h2>
+
+<tr>
+<th>Toronto, IL</th>
+<th>Bissell, IL</th>
+</tr>
+
+-->
+
+<ul id="hi-lo">
+<li>High
+<br>77&deg;<sup>F</sup></li>
+<li><img id="image" src="https://thecliparts.com/wp-content/uploads/2016/07/sunshine-clip-art.png" alt="partly cloudy">
+</li>
+<li>Low
+<br>48&deg;<sup>F</sup></li>
+</ul>
+<h3 class="left-aligned">Partly Cloudy</h3>
+
+
+<ul id="pwd">
+
+<li>Precipitation
+<br>0%</li>
+<li>Wind Speed
+<br>5-15 mph</li>
+<li>Wind Direction
+<br>NW</li>
+
+</ul>
+<h3 class="left-aligned">Cities Near You:</h3>
+<ul id="near-cities">
+<li id="preston">Preston, ID</li>
+<li>Weston, ID</li>
+</ul>
+
+</main>
+
+
+</div>
+
+</body>
+
+<footer>
+<img id="mobile-sketch" src="mobile.jpg"  alt="photo of mobile sketch"/>
+</footer>
+
+
+</html>

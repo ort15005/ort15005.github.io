@@ -1,0 +1,207 @@
+/*Must have a mobile first approach
+  Use flexbox for responsiveness
+  Use at least one media query
+  Check for valid CSS standards
+*/
+/*
+Color options:
+black: #000000
+blue: #0000ee
+grey: #808080
+burgandy: #990033
+red: #de2226
+white: #ffffff*/
+
+/*Issues to Fix Later:
+i-want-it, recipe, and review sections are not centered correctly
+media query for responsiveness
+    for a mobile view, make the white space go away?
+    shrink nav
+    allow recipes to stack
+emphasis for hiercy of importance
+*/
+
+
+* {
+    font-family:tahoma,geneva,sans-serif;
+
+}
+
+header{
+    background-color:#ffffff;
+    display:flex;
+    justify-content:center;
+    padding-top:.5em;
+    padding-bottom:.5em;
+}
+
+body {
+/*    background-color:white;*/
+/*    width:80%;*/
+    background-image:url(../images/site/background.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+main {
+/*    display:flex;*/
+    align-content: center;
+/*    background-color:blue;*/
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#ffffff;
+    padding-bottom:1%;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#heading {
+    color:#808080;
+}
+
+
+/*navigation*/
+
+nav {
+    background-color:#de2226;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: space-around;
+    font-size:1.25em;
+    padding-left:0;
+    margin-top:auto;
+    padding-bottom:0;
+}
+
+nav ul li a:hover {
+    background-color:#ffffff;
+    color:#de2226;
+}
+
+nav ul li a {
+    text-decoration:none;
+    color:#ffffff;
+}
+/*heading*/
+
+h1 {
+    background-color:#ffffff;
+    text-align:center;
+}
+
+/*coyete on rocket picture*/
+
+#main-picture img {
+    width:100%;
+}
+
+/*acme rocket, description, i want it button*/
+
+#i-want-it {
+    align-content:center;
+}
+
+#i-want-it ul {
+    list-style-type:none;
+    text-align:center;
+}
+
+#i-want-it ul li {
+}
+
+#i-want-it ul li:nth-child(1) {
+    font-size:1.75em;
+}
+
+#i-want-it ul li:nth-child(3){
+    font-style:italic;
+}
+
+#i-want-it ul li:nth-child(5) {
+
+}
+
+/*recipe and reviews content and headers*/
+
+p {
+    text-align:center;
+    font-style:italic;
+}
+
+#recipe-header, #review-header {
+    font-size:1.5em;
+}
+
+#review ul {
+    list-style-type:none;
+    text-align:center;
+
+}
+
+#recipes ul{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+#recipes ul li {
+    list-style-type: none;
+    text-align:center;
+}
+
+/*footer*/
+
+footer {
+    background-color:#de2226;
+    width:90%;
+    margin-right:auto;
+    margin-left:auto;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*Other pages styling*/
+
+#item-name {
+    font-size:2em;
+    color:#808080;
+}
+
+#item-picture img {
+    width:50%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+#item-description {
+    display:flex;
+}
+
+
+
+@media screen and (min-width: 720px){
+
+    nav ul {
+        font-size:2em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

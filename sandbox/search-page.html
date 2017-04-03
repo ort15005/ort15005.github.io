@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+<!--needs to update with pulled information-->
+        <title>Watching Weather</title>
+        <link rel="stylesheet" type="text/css" href="flexbox-styling.css" media="screen">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <link href='//fonts.googleapis.com/css?family=Arsenal' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+    </head>
+
+    <!--********************************************
+    * Who Did You Collaborate With On This Activity?
+    * 1. Morgan Orton
+    * 2. Joseph Canto
+    * 3. Daniel Sedrick
+    * 4. Dustin Rowbury
+    * 5. Matthew Sortomme
+    ******************************************** -->
+
+
+    <header>
+
+    </header>
+
+    <body>
+        <div class="grid">
+            <div class="r1-c1">
+                <h1 id="logo-sign">WW</h1>
+                <p id="logo-name">Watching Weather</p>
+            </div>
+
+
+            <div class="r1-c2">
+                <nav id="page-nav">
+                    <ul>
+                        <li><a href="#">Home    |</a></li>
+                        <li><a href="franklin-weather-website.html">Franklin    |</a></li>
+                        <li><a href="#">Springfield |</a></li>
+                        <li><a href="greenville-responsive-website.html">Greenville |</a></li>
+                        <li><a href="jsonweather-html/index.html">Current Location |</a></li>
+                        <li><a href="#">Search Page</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="r2-c0">
+                <form method="get" action="//autocomplete.wunderground.com/aq"    id="page-search">
+                    <input type="search" placeholder="Search by city, zipcode" name="query" id="search-bar" style="width:80%;">
+                    <input type="submit" name="submit" value="Search" id="submit" style="border-radius:3px;">
+                </form>
+            </div>
+
+            <h4 id="searchResults"></h4>
+
+
+            <main>
+                <div class="r3-c0">
+<!--needs to update with pulled information-->
+                    <h1 id="location-short"></h1>
+<!--                    <h1 id="location-full"></h1>-->
+                </div>
+                <br>
+<!--needs to update with pulled information-->
+                <div id="info">
+<!--                    <div id="h1"></div>-->
+                    <div id="currentTemp"></div>
+                    <div id="high"></div>
+                    <div id="low"></div>
+                    <div id="summary"></div>
+                </div>
+
+            </main>
+        </div>
+
+        <footer>
+            <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+                    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                    crossorigin="anonymous"></script>
+            <script src="search-page.js"></script>
+
+        </footer>
+
+    </body>
+
+
+
+</html>

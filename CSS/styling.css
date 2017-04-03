@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+/*this is essential*/
+
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    font-size: 1em;
+    /* write both for clarity for those who don't know what em is */
+    font-family: arial "arial thin" sans-serif;
+    /*need quotes because there is a space in the name. it would think that thin is a different font face. sans-serif is the back-up. if the browser doesn't have access to arial, use arial thin, if it doesn't have either, use default sans-serif.*/
+}
+
+
+
+#wrapper {
+    width:100%;
+}
+/*This makes it fit the whole screen. If you want to change it then just change the wrapper width*/
+
+#hi-lo{
+    list-style: none;
+}
+#hi-lo>li{
+    display: inline;
+    width: 25%;
+}
+
+#hi-lo #conditions {
+    width: 50%;
+}

@@ -1,0 +1,557 @@
+* {
+
+}
+
+/*Game Plan:
+    use flexbox on the high and low temperatures
+    study for flexbox quiz
+    add a scroll bar or something to change the hourly forcast information
+    change all of the Franklin information to Greenville
+    copy the Franklin coding, change data, link to same stylesheet
+    jazz up the links for different cities. maybe make them expand a little when you hover over them?
+*/
+
+body {
+    font-family: 'Arsenal';
+
+}
+
+.r1-c1 {
+    width:25%;
+/*    background-color:red;*/
+    float:left;
+    text-align:center;
+    font-size:12px;
+    font-family: 'Arvo', serif;
+}
+
+#logo-name {
+    display:none;
+}
+
+.r1-c2 {
+    width:75%;
+/*    background-color:blue;*/
+    float:right;
+    text-align:center;
+}
+
+#page-nav ul{
+    list-style:none;
+    background-color:#4d4d4d;
+    padding-bottom:5px;
+    padding-top:5px;
+    padding-left:0;
+}
+
+#page-nav ul li {
+    display: inline-block;
+    text-align: center;
+
+}
+
+/*change the font-size here for nav to change*/
+
+#page-nav ul li a {
+    text-decoration:none;
+    color:white;
+    font-size:15px;
+}
+
+.r2-c0 {
+    width:100%;
+/*    background-color:green;*/
+    float:left;
+    padding-bottom:5px;
+
+}
+
+#page-search {
+    margin-left:5%;
+}
+
+#search-bar {
+    height:2em;
+    border-radius:5px;
+}
+
+.r3-c0 {
+    width:100%;
+/*    background-color:purple;*/
+    float:left;
+    text-align:center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size:1.25em;
+    background-color:#bdf7ff;
+}
+
+#location-full {
+    display:none;
+}
+
+.ROW-4 {
+    display:table;
+    width:100%;
+    font-family:dosis;
+}
+
+.r4-c1 {
+/*    background-color:yellow;*/
+    display:table-cell;
+    width:33.333%;
+    text-align:center;
+    vertical-align: middle;
+    font-size: 2em;
+}
+
+.r4-c2 {
+    display:table-cell;
+/*    background-color:pink;*/
+    width:33.333%;
+    text-align:center;
+    vertical-align: middle
+}
+
+#image {
+    width:100%;
+}
+
+.r4-c3 {
+    display:table-cell;
+/*    background-color:aqua;*/
+    width:33.333%;
+    text-align:center;
+    vertical-align: middle;
+    font-size: 2em;
+}
+
+.ROW-4-large1 {
+    display:none;
+}
+
+.ROW-4-large2 {
+    display:none;
+}
+
+.r5-c0 {
+/*    background-color:antiquewhite;*/
+    width:100%;
+    float:left;
+    text-align:center;
+    border-bottom:solid black;
+    letter-spacing: 2px;
+    font-family:dosis;
+}
+
+.ROW-6 {
+    display:table;
+    width:100%;
+    border-bottom:solid black;
+}
+
+.r6-c1 {
+    display:table-cell;
+/*    background-color:red;*/
+    width:33.333%;
+    text-align:center;
+    border-right:solid black;
+    background-color:#ffe963;
+}
+
+.r6-c2 {
+    display:table-cell;
+/*    background-color:blue;*/
+    width:33.333%;
+    text-align:center;
+    border-right:solid black;
+    background-color:#ff6d6d;
+}
+
+.r6-c3 {
+    display:table-cell;
+/*    background-color:green;*/
+    width:33.333%;
+    text-align:center;
+    background-color:#8ad0ce;
+}
+
+.stat-image {
+    display: none;
+}
+
+.r7-c0 {
+/*    background-color:cyan;*/
+    width:100%;
+    float:left;
+    text-align:center;
+    border-bottom:solid black;
+}
+
+#hour {
+    display: none;
+}
+
+.r8-c1 {
+/*    background-color:brown;*/
+    width:49%;
+    float:left;
+    text-align:center;
+    text-transform:uppercase;
+
+}
+
+.r8-c2 {
+/*    background-color:darkgreen;*/
+    width:50%;
+    float:right;
+    text-align:center;
+    text-transform:uppercase;
+    border-left:solid black 2px;
+}
+
+#scroll ul li {
+    list-style:none;
+    display: table-cell;
+    font-size:2em;
+    border-left:solid black;
+    padding-right:10px;
+}
+
+#scroll-data {
+    overflow:auto;
+    overflow-y:hidden;
+}
+
+#mobile {
+    width:33.33%;
+    display:block;
+    margin:auto;
+    padding-top:40px;
+}
+
+#medium {
+    display:none;
+}
+
+#large {
+    display:none;
+}
+
+#scroll {
+    display:none;
+}
+
+@media screen and (min-width:600px) and (max-width:1023px) {
+    body{
+/*        background-color:blue;*/
+        margin-right:0;
+        margin-left:0;
+    }
+
+    #page-nav ul li a {
+        font-size:30px;
+        line-height:65px;
+    }
+
+    #page-nav ul{
+        list-style:none;
+        background-color:#4d4d4d;
+        padding-bottom:5px;
+        padding-top:5px;
+        padding-left:0;
+        height:70px;
+    }
+
+    .r2-c0 {
+        width:840px;
+        /*    background-color:green;*/
+        float:left;
+        padding-bottom:5px;
+        padding-top:5px;
+
+    }
+
+    #page-search {
+        margin-left:1%;
+    }
+
+    #search-bar {
+        height:2.5em;
+        border-radius:5px;
+    }
+
+    #logo-sign {
+        font-size:2.5em;
+    }
+
+    #logo-name {
+        display: inline;
+        font-size: 1.25em;
+        font-style:italic;
+    }
+
+
+
+    .ROW-4 {
+        padding-top:5px;
+        font-family:dosis;
+    }
+    .r4-c1 {
+        font-size:3em;
+    }
+
+    .r4-c3 {
+        font-size:3em;
+    }
+
+    .r5-c0 {
+        font-size:1.25em;
+        letter-spacing:5px;
+        font-family:dosis
+    }
+
+    .stat-image {
+        display:inline;
+        width:33.33%;
+        padding:5px;
+    }
+
+    #hour {
+        display:inline;
+        letter-spacing:2px;
+    }
+
+    #city {
+        display:none;
+    }
+
+    .r7-c0 {
+        padding:5px;
+    }
+
+    .r8-c1, .r8-c2 {
+        display: none;
+    }
+
+    #scroll {
+        display:inline;
+    }
+
+    #mobile {
+        display:none;
+    }
+    #medium {
+        display:inline;
+        display:block;
+        width:33.333%;
+        margin:auto;
+        padding-top:40px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    body {
+/*        background-color:green;*/
+        width:80%;
+        margin:auto;
+        display:block;
+        border-right:solid #4d4d4d;
+        border-left:solid #4d4d4d;
+        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #page-nav ul li a {
+        font-size:2em;
+        letter-spacing: 2px;
+        line-height:55px;
+    }
+
+
+    #logo-sign {
+        text-decoration:none;
+        font-size:4em;
+        margin-top:4%;
+        margin-bottom:-1%
+    }
+    #logo-name {
+        display: inline;
+        font-size: 1.25em;
+        font-style:italic;
+    }
+
+    .r1-c2 {
+        margin-bottom:10px;
+    }
+
+    #page-nav ul {
+        height:60px;
+    }
+
+    .r2-c0 {
+        width:90%;
+        /*    background-color:green;*/
+        padding-bottom:5px;
+        margin-left:10%;
+
+    }
+
+    #page-search {
+        margin-left:5%;
+    }
+
+    #search-bar {
+        height:2em;
+        border-radius:0px;
+        height:30px;
+    }
+
+
+
+    #location-short {
+        display:none;
+    }
+
+    #location-full {
+        display:inline;
+        font-size:2.25em;
+    }
+
+    .r3-c0 {
+        background-color:#bdf7ff;
+/*        padding-top:15px;*/
+        width:80%;
+        margin-left:10%;
+        margin-top:15px;
+        border-bottom: solid black;
+        border-top: solid black;
+        margin-bottom:10px;
+    }
+
+    .ROW-4 {
+        display:none;
+    }
+
+    .ROW-4-large1 {
+        display:inline;
+        display:table;
+        width:75%;
+        margin-left:12.5%;
+        font-family:dosis;
+    }
+
+    .r4-image {
+        display:table-cell;
+        float:left;
+        width:30%;
+        padding-left:15%;
+
+    }
+
+    #image-large {
+        width:100%;
+    }
+/*Use flexbox here!!! */
+    .r4-degrees {
+        display:table-cell;
+        float:right;
+        font-size:3em;
+/*        width:50%;*/
+        padding-top:50px;
+        padding-right:5%;
+
+    }
+
+
+/*    Use flexbox here!!! */
+    .ROW-4-large2 {
+        display:inline;
+        display:table;
+        width:75%;
+        margin-left:12.5%;
+        font-size:3em;
+        font-family:dosis;
+    }
+
+    .r4-summary {
+        display:table-cell;
+/*        float:left;*/
+        width:40%;
+        padding-left:23%;
+
+    }
+
+    .r4-celsius {
+        display:table-cell;
+        width:35%;
+        padding-left:10px;
+
+    }
+
+    .r5-c0 {
+        display:none;
+    }
+
+    .ROW-6 {
+        border-bottom:none;
+    }
+
+    .stat-image {
+        display:inline;
+        width:20%;
+        padding:5px;
+    }
+
+    .r7-c0, .r8-c1, .r8-c2{
+        display:none;
+    }
+
+    #hour {
+        display:inline;
+    }
+
+    .r7-c0 {
+        display:inline;
+        padding:0px;
+    }
+
+    #scroll {
+        display:inline;
+    }
+
+    #scroll ul {
+        width:95%;
+    }
+
+    #city {
+        display:none;
+    }
+
+    #mobile {
+        display:none;
+    }
+
+    #medium {
+        display:none;
+    }
+
+    #large {
+        display:inline;
+        display:block;
+        width:33.333%;
+        margin:auto;
+        padding-top:40px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+

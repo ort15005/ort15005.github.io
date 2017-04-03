@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Watching Weather</title>
+        <link rel="stylesheet" type="text/css" href="flexbox-styling.css" media="screen">
+        <meta name="viewport" content="width=device-width">
+
+        <link href='//fonts.googleapis.com/css?family=Arsenal' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+    </head>
+
+    <header>
+
+    </header>
+
+    <!-- *********************************************
+* Who Did You Collaborate With On This Assessment?
+* 1. Morgan Orton
+* 2. Daniel Sedrick
+* 3. Matthew Sortomme
+* 4. Dustin Rowbury
+* 5. Andrew Jester
+* ******************************************** -->
+
+    <body>
+        <div class="grid">
+            <div class="r1-c1">
+                <h1 id="logo-sign">WW</h1>
+                <p id="logo-name">Watching Weather</p>
+            </div>
+
+
+            <div class="r1-c2">
+                <nav id="page-nav">
+                    <ul>
+                        <li><a href="homepage.html">Home    |</a></li>
+                        <li><a href="franklin-weather-website.html">Franklin    |</a></li>
+                        <li><a href="#">Springfield |</a></li>
+                        <li><a href="greenville-responsive-website.html">Greenville |</a></li>
+                        <li><a href="jsonweather-html/index.html">Current Location |</a></li>
+                        <li><a href="search-page.html">Search Page</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="r2-c0">
+                <form id="page-search">
+                    <input type="search" placeholder="Search by city, zipcode" name="q" id="search-bar" style="width:80%;">
+                    <input type="submit" name="submit" id="submit" style="border-radius:3px;">
+                </form>
+            </div>
+            <main>
+                <div class="r3-c0">
+                    <h1 id="location-short">Greenville, SC</h1>
+                    <h1 id="location-full">Greenville, South Carolina, 29601</h1>
+                </div>
+                <br>
+
+                <h1 style="text-align:center;">Here is a link to the current information for this location: <a href='jsonweather-html/index.html' target="_blank">Click This</a></h1>
+
+
+            </main>
+
+
+        </div>
+
+        <footer>
+            <img src="mobile.jpg" id="mobile" alt="mobile view">
+            <img src="medium.jpg" id="medium" alt="medium view">
+            <img src="desktop.jpg" id="large" alt="large view">
+
+
+            <script
+                    src="https://code.jquery.com/jquery-3.1.1.min.js"
+                    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                    crossorigin="anonymous"></script>
+            <script src="jsonweather-html/scripts/remote_wu.js"></script>
+            <script src="jsonweather-html/scripts/modules.js"></script>
+
+        </footer>
+
+    </body>
+
+
+
+</html>
